@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -160,6 +162,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steam-train-whistle-daniel_simon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Appear-KP-1137861048.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applause-SoundBible.com-151138312.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ovation-Mike_Koenig-1061486511.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blast-SoundBible.com-2068539061.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magic Wand Noise-SoundBible.com-375928671.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

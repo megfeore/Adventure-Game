@@ -29,6 +29,7 @@ namespace Adventure_Game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,7 +42,13 @@ namespace Adventure_Game
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(21, 237);
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(21, 381);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 47);
             this.button1.TabIndex = 0;
@@ -51,7 +58,13 @@ namespace Adventure_Game
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(21, 305);
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(213, 381);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(172, 47);
             this.button2.TabIndex = 1;
@@ -61,7 +74,13 @@ namespace Adventure_Game
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(242, 237);
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button3.FlatAppearance.BorderSize = 2;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(407, 381);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(172, 47);
             this.button3.TabIndex = 2;
@@ -71,7 +90,13 @@ namespace Adventure_Game
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(242, 305);
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button4.FlatAppearance.BorderSize = 2;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(602, 381);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(172, 47);
             this.button4.TabIndex = 3;
@@ -81,22 +106,23 @@ namespace Adventure_Game
             // 
             // headingLabel
             // 
-            this.headingLabel.BackColor = System.Drawing.Color.Goldenrod;
-            this.headingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headingLabel.Location = new System.Drawing.Point(18, 20);
+            this.headingLabel.BackColor = System.Drawing.Color.Silver;
+            this.headingLabel.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headingLabel.Location = new System.Drawing.Point(-5, 20);
             this.headingLabel.Name = "headingLabel";
-            this.headingLabel.Size = new System.Drawing.Size(756, 46);
+            this.headingLabel.Size = new System.Drawing.Size(806, 57);
             this.headingLabel.TabIndex = 4;
             this.headingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // outputLabel
             // 
-            this.outputLabel.BackColor = System.Drawing.Color.Khaki;
-            this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.Location = new System.Drawing.Point(18, 97);
+            this.outputLabel.BackColor = System.Drawing.Color.LightGray;
+            this.outputLabel.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.Location = new System.Drawing.Point(17, 97);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(396, 106);
+            this.outputLabel.Size = new System.Drawing.Size(396, 255);
             this.outputLabel.TabIndex = 5;
+            this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -112,7 +138,7 @@ namespace Adventure_Game
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 376);
+            this.ClientSize = new System.Drawing.Size(800, 451);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.headingLabel);
@@ -120,8 +146,9 @@ namespace Adventure_Game
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hogwart\'s Adventure";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
