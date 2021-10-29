@@ -474,7 +474,6 @@ namespace Adventure_Game
                     Refresh();
                     Thread.Sleep(2000);
                     Application.Exit();
-
                     break;
                 default:
                     break;
